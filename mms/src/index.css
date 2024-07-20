@@ -1,0 +1,12 @@
+:root{
+  --bg: #1F2833;
+  --txt:#66FCF1;
+  --sm-txt:#C5C6C7;
+  --blk:#0B0C10;
+  --sec:#45A29E;
+}
+
+body{
+  background: linear-gradient(to right,var(--bg),var(--blk));
+  background-size: cotain;
+}

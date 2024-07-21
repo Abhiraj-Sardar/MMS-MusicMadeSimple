@@ -5,13 +5,13 @@
 
 .left-panel {
     width: 30%;
-    /* background-color: #333; */
+    background-color: #333;
     
     color: var(--txt);
     font-size: 24px;
     font-weight: 700;
     padding: 20px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .song-list {
@@ -40,5 +40,5 @@
 
 #song-description {
     font-size: 18px;
-    color: #333;
+    /* color: #333; */
 }

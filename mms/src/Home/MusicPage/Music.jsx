@@ -4,9 +4,10 @@ import Card from './Card';
 import Data from '../../Music/Data';
 import { Timer } from './Timer';
 const Music = () => {
-  const music = useState(Data);
+  const [music,setMusic] = useState(Data);
   const [currentSong,setCurrentSong]=useState(0);
   const [songDuration,setSongDuration]=useState(0);
+
   useEffect(()=>{
     const audio = new Audio(Data[currentSong].src);
     audio.onloadedmetadata=function(){
@@ -18,6 +19,7 @@ const Music = () => {
 
   },[currentSong]);
   return (
+    <>
     <div className="container-fluid music-container">
       <div className="left-panel">
         <ul className="song-list">
@@ -27,9 +29,7 @@ const Music = () => {
                 <li onClick={()=>{setCurrentSong(i)}}>{Data[i].title}</li>
               )
             })
-          }
-          
-          
+          }          
         </ul>
       </div>
       <div className="right-panel">
@@ -40,6 +40,20 @@ const Music = () => {
         />
       </div>
     </div>
+    <div className="mobile-view-list">
+      <div className="left-panel">
+          <ul className="song-list">
+            {
+              music.map((item,i)=>{
+                return(
+                  <li onClick={()=>{setCurrentSong(i)}}>{Data[i].title}</li>
+                )
+              })
+            }          
+          </ul>
+      </div>
+    </div>
+    </>
   )
 }
 

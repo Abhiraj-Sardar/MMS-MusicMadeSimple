@@ -64,6 +64,24 @@ const Card = (props) => {
         }
     }
 
+    const callNext=()=>{
+        console.log("hi");
+        next();
+        if (play) {
+            AudioRef.current.pause();  // Pause the audio first
+            AudioRef.current.currentTime = 0;  // Reset the current time
+            AudioRef.current.load();  // Load the audio
+    
+            // Use a small timeout to ensure the browser processes the changes
+            setTimeout(() => {
+                AudioRef.current.play().catch(error => {
+                    console.error("Error playing the audio:", error);
+                });
+            }, 50);  // Adjust the timeout as necessary
+        }
+
+    }
+
     useEffect(()=>{
         AudioRef.current.volume=volume/100;
     },[volume])
@@ -113,7 +131,8 @@ const Card = (props) => {
 
                 <audio src={Data[props.currentSong].src} hidden ref={AudioRef}
                     onLoadStart={handleLoadStart}
-                    onTimeUpdate={handleTimeUpdate}
+                    onTimeUpdate={handleTimeUpdate} 
+                    onEnded={callNext}
                 ></audio>
             </div>
         </div>

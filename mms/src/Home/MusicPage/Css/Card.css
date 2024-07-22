@@ -88,3 +88,14 @@
     text-align: center;
     color: #fff;  
   }
+
+  @media screen and (max-width:768px) {
+    .card .card__content{
+      width: 100%;
+    }
+    .card .card__content .img__container{
+      left:50px;
+      top:20px;
+      width:65%;
+    }
+  }

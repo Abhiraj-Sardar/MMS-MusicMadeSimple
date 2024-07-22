@@ -5,7 +5,7 @@
 
 .left-panel {
     width: 30%;
-    background-color: #333;
+    /* background-color: #333; */
     
     color: var(--txt);
     font-size: 24px;
@@ -16,6 +16,7 @@
 
 .song-list {
     list-style: none;
+    /* background-color: #333; */
 }
 
 .song-list li {
@@ -41,4 +42,28 @@
 #song-description {
     font-size: 18px;
     /* color: #333; */
+}
+
+.mobile-view-list{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    
+    .right-panel{
+        /* background-color: aliceblue; */
+        width: 100%;
+    }
+    .music-container .left-panel{
+        display: none;
+    }
+
+    .mobile-view-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .mobile-view-list .left-panel{
+        width:100%;
+    }
 }

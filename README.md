@@ -25,9 +25,10 @@ npm start
 
 # For Contributors ✨
 
- - Fork This repo (Make Sure to Star It)
+ - Fork This repo (Make Sure to Star⭐ It)
  - if you want to add new feature create a branch with the feature name
  - make a pull request with the screenshot/output of the feature
+
 
 
 ![](https://github.com/Abhiraj-Sardar/MMS-MusicMadeSimple/blob/master/output.png)

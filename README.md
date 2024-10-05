@@ -23,3 +23,4 @@ npm i
 npm start
 ```
 
+![](https://github.com/Abhiraj-Sardar/MMS-MusicMadeSimple/blob/master/output.png)

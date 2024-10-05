@@ -1,12 +1,56 @@
 :root{
   --bg: #1F2833;
-  --txt:#66FCF1;
-  --sm-txt:#C5C6C7;
+  --txt:#4577a6;
+  --sm-txt:#91aac4;
   --blk:#0B0C10;
   --sec:#45A29E;
 }
 
-body{
-  background: linear-gradient(to right,var(--bg),var(--blk));
-  background-size: cotain;
+.btn{
+  transition: background-color 0.3s ease;
 }
+
+.btn:hover{
+  background-color: #0056b3; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline-block;
+}
+
+.link-button {
+  background-color: transparent;
+  color: #4577a6;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.link-button:hover {
+  background-color: #3c59b8;
+  color: white;
+}
+

@@ -4,16 +4,16 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <a href="#">Logo</a>
+                <button className="link-button">Logo</button>
             </div>
             <ul className="navbar-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Playlist</a></li>
-                <li><a href="#">Songs</a></li>
-                <li><a href="#">Coming Soon</a></li>
+                <li><button className="link-button">Home</button></li>
+                <li><button className="link-button">Playlist</button></li>
+                <li><button className="link-button">Songs</button></li>
+                <li><button className="link-button">Coming Soon</button></li>
             </ul>
             <div className="navbar-button">
-                <a href="#" className="btn">Get Started</a>
+                <button className="btn">Get Started</button>
             </div>
             <div className="navbar-toggle">
                 <span className="toggle-icon">&#9776;</span>

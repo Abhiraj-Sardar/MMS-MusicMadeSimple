@@ -63,7 +63,7 @@
         right: 0;
         height: 100vh;
         width: 100%;
-        background-color: rgba(51, 51, 51, 0.8);
+        background-color: rgba(51, 51, 51, 1);
         transform-origin: top right;
         transition: all 300ms;
     }

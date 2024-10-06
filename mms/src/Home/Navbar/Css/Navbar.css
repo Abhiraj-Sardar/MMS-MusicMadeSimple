@@ -47,20 +47,25 @@
 
 .toggle-icon {
     font-size: 24px;
-    color: #fff;
+    color: #007bff;
     cursor: pointer;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .navbar-menu {
-        display: none;
+        z-index: 10;
+        display: flex;
+        transform: scale(0);
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        left: 0;
+        top: 70px;
+        right: 0;
+        height: 100vh;
         width: 100%;
-        background-color: #333;
+        background-color: rgba(51, 51, 51, 0.8);
+        transform-origin: top right;
+        transition: all 300ms;
     }
 
     .navbar-menu li {
@@ -70,10 +75,15 @@
 
     .navbar-toggle {
         display: block;
+        color: #007bff;
     }
 
     .navbar-button {
         display: none;
+    }
+    .navbar-menu.navbar-menu.active{
+        display: flex;
+        transform: scale(1);
     }
 }
 

@@ -50,6 +50,16 @@
     color: #007bff;
     cursor: pointer;
 }
+.navbar-button{
+    display: flex;
+    gap:10px;
+}
+
+.darkmode{
+    color: var(--txt);
+    text-decoration: none;
+    font-size: 16px;
+}
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
@@ -78,7 +88,7 @@
         color: #007bff;
     }
 
-    .navbar-button {
+    .navbar-button .btn{
         display: none;
     }
     .navbar-menu.navbar-menu.active{

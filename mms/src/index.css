@@ -6,6 +6,17 @@
   --sec:#45A29E;
 }
 
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color:var(--bg);
+}
+
 .btn{
   transition: background-color 0.3s ease;
 }

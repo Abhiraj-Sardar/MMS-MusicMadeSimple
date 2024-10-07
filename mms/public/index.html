@@ -31,72 +31,9 @@
     />
     <title>Abhiraj's Playlist</title>
 
-    
-    <style>
-      body {
-        background-color: white;
-        color: black;
-        font-family: Arial, sans-serif;
-        transition: background-color 0.3s, color 0.3s;
-      }
-
-      body.dark-mode {
-        background-color:var(--bg);
-      }
-
-      .theme-toggle-btn {
-        position: fixed;
-        top: 10px;
-        right: 170px;
-        padding: 10px 10px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        z-index: 1000;
-        transition: background-color 0.3s ease;
-        
-      }
-
-      .theme-toggle-btn:hover {
-        background-color: #0056b3; 
-      }
-
-    </style>
+    <div id="root"></div>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-
-   
-    <button id="theme-toggle" class="theme-toggle-btn">Dark/Light Mode</button>
-
-    <div id="root"></div>
-
-    <script>
-      const toggleButton = document.getElementById('theme-toggle');
-      const body = document.body;
-
-
-      toggleButton.addEventListener('click', function () {
-        body.classList.toggle('dark-mode');
-
-     
-        if (body.classList.contains('dark-mode')) {
-          localStorage.setItem('theme', 'dark');
-        } else {
-          localStorage.setItem('theme', 'light');
-        }
-      });
-
-    
-      window.onload = function () {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-          body.classList.add('dark-mode');
-        }
-      };
-      
-    </script>
   </body>
 </html>

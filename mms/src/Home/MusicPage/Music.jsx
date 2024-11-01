@@ -26,7 +26,7 @@ const Music = () => {
           {
             music.map((item,i)=>{
               return(
-                <li onClick={()=>{setCurrentSong(i)}}>{Data[i].title}</li>
+                <li onClick={()=>{setCurrentSong(i)}}>🎶 {Data[i].title}</li>
               )
             })
           }          
